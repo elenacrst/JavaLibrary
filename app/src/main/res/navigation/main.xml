@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/authorsFragment">
+    <fragment
+        android:id="@+id/authorsFragment"
+        android:name="com.elena.library.view.authors.AuthorsFragment"
+        android:label="@string/authors"
+        tools:layout="@layout/fragment_authors">
+        <action
+            android:id="@+id/action_authorsFragment_to_booksFragment"
+            app:destination="@id/booksFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="com.elena.library.view.books.BooksFragment"
+        android:label="@string/books">
+        <argument
+            android:name="authorName"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="pageSize"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+</navigation>

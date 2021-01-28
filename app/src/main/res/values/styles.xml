@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LibraryRecyclerView">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/large_margin</item>
+        <item name="reverseLayout">false</item>
+    </style>
+</resources>

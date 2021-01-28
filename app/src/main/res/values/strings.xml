@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="authors">Authors</string>
+    <string name="books">Books</string>
+    <string name="error_general">Error</string>
+    <string name="title_author">Author</string>
+    <string name="title_book_count">Number of books</string>
+    <string name="title_even">Even</string>
+    <string name="message_no_data">No data available</string>
+</resources>
